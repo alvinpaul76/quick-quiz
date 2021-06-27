@@ -1,0 +1,94 @@
+#home {
+    background-image: url('../../assets/img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100vw;
+
+    section {
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        padding-top: $small;
+        padding-left: $small;
+        padding-right: $small;
+        margin-top: $small;
+        height: 500px;
+        width: 300px;
+    }
+    
+    .header {
+        margin-top: $normal;
+        text-align: center;
+        
+        h1 {
+            margin-top: $small;
+            font-family: $quicksand;
+            font-size: $large;
+            color: $off-white;
+        }
+    }
+
+    .topics {
+        margin-top: $small;
+        text-align: center;
+
+        h2{
+            font-family: $quicksand;
+            font-size: $small;
+            color: $off-white;
+        }
+    }
+
+    .home-option-container {
+        margin-top: $small;
+        display: grid;
+        grid-gap: 15px;
+        width: 100%;
+        text-align: center;
+        justify-items: center;
+
+        .home-option-buttons{
+            color: #fff;
+            cursor: pointer;
+            border-radius: $button-radius;
+            padding: $normal 0;
+            transition: 0.3s linear all;
+            width: 90%;
+            text-align: center;
+            box-shadow: $shadow;
+        }
+
+        #start-button {
+            background-color: $green;
+            &:hover {
+                background-color: darken($green, 15%);
+            }
+        }
+
+        #instructions-button {
+            background-color: $blue;
+            &:hover {
+                background-color: darken($blue, 15%);
+            }
+        }
+    }
+
+    .copyleft {
+        margin-top: $medium;
+        color: $off-white;
+        font-size: x-small;
+        text-align: center;
+    }
+}
+
+@media (max-height: 500px) {
+    #home section {
+        margin-top: 0%;
+        padding: 0 $normal;
+        width: 100%;
+        height: 100%;
+    }
+}
+

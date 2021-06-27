@@ -1,0 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: $quicksand;
+}
+
+@mixin hoverEffect() {
+    cursor: pointer;
+    background-color: darken(currentcolor, 20%);
+    box-shadow: $shadow;
+}
