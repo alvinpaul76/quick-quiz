@@ -1,7 +1,18 @@
 #quiz {
+    color: $off-white;
+
     @include commonBackground;
 
     section {
-        @include commonSection(500px, 700px)
+        @include commonSection(550px, 700px)
+    }
+
+    h1 {
+        font-size: $large;
+        font-weight: 700;   
+    }
+
+    .topic {
+        text-align: left;
     }
 }

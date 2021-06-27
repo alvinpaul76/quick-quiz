@@ -1,0 +1,33 @@
+.questions {
+    h4 {
+        font-family: $quicksand;
+        font-weight: 100;
+    }
+
+    .question {
+        margin-top: $medium;
+        text-align: left;
+    }
+ 
+    .options-container {
+        margin-top: $medium;
+
+        .option {
+            background-color: $option-background;
+            border-radius: $option-button-radius;
+            color: $off-white;
+            margin: $extra-small auto;
+            padding: $extra-small;
+            transition: 0.3s linear all;
+            text-align: left;
+
+            .radio-icon {
+                @include centerIconPosition(0.5rem, 0rem)
+            }
+            
+            &:hover {
+                @include hoverEffect;    
+            }
+        }
+    }
+}

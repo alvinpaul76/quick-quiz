@@ -1,0 +1,14 @@
+.status-container {
+    display: flex;
+    justify-content: space-between;
+    color: $off-white;
+
+    .status-icon-left{
+        @include centerIconPosition(0.25rem, 0rem)
+    }
+
+    .status-icon-right{
+        @include centerIconPosition(0rem, 0.25rem)
+    }
+}
+

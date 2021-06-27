@@ -9,7 +9,7 @@ body {
 
 @mixin hoverEffect {
     cursor: pointer;
-    background-color: darken(currentcolor, 20%);
+    background-color: darken($option-background, 15%);
     box-shadow: $shadow;
 }
 
@@ -32,4 +32,12 @@ body {
     margin-top: $small;
     height: $height;
     width: $width;
+}
+
+@mixin centerIconPosition($paddingRight, $paddingLeft) {
+    position: relative;
+    top: 5px;
+    font-size: $small;
+    padding-right: $paddingRight;
+    padding-left: $paddingLeft;
 }
