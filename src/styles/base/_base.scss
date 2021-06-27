@@ -7,8 +7,29 @@ body {
     font-family: $quicksand;
 }
 
-@mixin hoverEffect() {
+@mixin hoverEffect {
     cursor: pointer;
     background-color: darken(currentcolor, 20%);
     box-shadow: $shadow;
+}
+
+@mixin commonBackground {
+    background-image: url('../../assets/img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100vw;
+}
+
+@mixin commonSection($height, $width) {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding-top: $small;
+    padding-left: $small;
+    padding-right: $small;
+    margin-top: $small;
+    height: $height;
+    width: $width;
 }

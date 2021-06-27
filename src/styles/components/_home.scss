@@ -1,21 +1,8 @@
 #home {
-    background-image: url('../../assets/img/background.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: space-around;
-    height: 100vh;
-    width: 100vw;
-
+    @include commonBackground;
+    
     section {
-        background-color: rgba(0, 0, 0, 0.7);
-        border-radius: 10px;
-        padding-top: $small;
-        padding-left: $small;
-        padding-right: $small;
-        margin-top: $small;
-        height: 500px;
-        width: 300px;
+        @include commonSection(500px, 300px)
     }
     
     .header {

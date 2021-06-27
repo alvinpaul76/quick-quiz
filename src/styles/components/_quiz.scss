@@ -1,0 +1,7 @@
+#quiz {
+    @include commonBackground;
+
+    section {
+        @include commonSection(500px, 700px)
+    }
+}
